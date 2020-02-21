@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "es5TranspileIssue": {
@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "es5TranspileIssue"
+    }
+  },
+  "defaultProject": "es5TranspileIssue",
+  "cli": {
+    "analytics": "adb6b7ce-bbd8-48d3-a25f-ae5a1d3abbdd"
+  }
 }
