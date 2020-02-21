@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ExampleWithStaticMethod } from './example-with-static-method';
+
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
@@ -9,7 +11,6 @@ export class AppComponent implements OnInit {
   example = {};
 
   ngOnInit(): void {
-    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-    //Add 'implements OnInit' to the class.
+    ExampleWithStaticMethod.modifyObject(this.example);
   }
 }
